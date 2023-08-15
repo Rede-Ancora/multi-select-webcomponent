@@ -1,6 +1,6 @@
 {
   "name": "@rede-ancora/multi-select-webcomponent",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "A fully styleable multiselect with no polyfills",
   "main": "dist/multi-select-webcomponent.js",
   "scripts": {
