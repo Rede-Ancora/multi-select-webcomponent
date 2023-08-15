@@ -11,6 +11,7 @@
             super();
             this.options = [];
             this.singleSelectMode = this.getAttribute('singleSelect') === 'true';
+            this.disableSelectAll = this.getAttribute('disableselectall') === 'true';
             this.searchbox = document.createElement('input');
             this.dropdown = document.createElement('div');
             this.selected = document.createElement('div');
@@ -131,7 +132,9 @@
                 }
             }
             this.selected.appendChild(this.searchbox);
-            if (this.dropdown.innerHTML !== '') {
+            if (!this.disableSelectAll) {
+                this.unbuildSelectAllButton();
+            } else if (this.dropdown.innerHTML !== '') {
                 this.buttons.appendChild(this.buildSelectAllButton());
             }
             if (this.selected.querySelectorAll('.msw-selecteditem').length > 0) {
@@ -199,6 +202,14 @@
             button.addEventListener('click', (e) => this.onSelectAllClick(e));
             button.disabled = this.disabled;
             return button;
+        }
+        unbuildSelectAllButton () {
+            console.log('unbuildSelectAllButton')
+            const selectAllButton = this.shadowRoot?.querySelector('.msw-selectallbutton');
+            if (selectAllButton) {
+                selectAllButton.removeEventListener('click', this.onSelectAllClick);
+                selectAllButton.remove();
+            }
         }
         findOptionByValue (value) {
             for (const option of this.options) {
