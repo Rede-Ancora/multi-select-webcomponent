@@ -1,0 +1,30 @@
+{
+  "name": "@ancora/multi-select-webcomponent",
+  "version": "1.2.0",
+  "description": "A fully styleable multiselect with no polyfills",
+  "main": "dist/multi-select-webcomponent.js",
+  "scripts": {
+    "lint": "eslint src/*",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "deliver": "np"
+  },
+  "author": "Honatas (Jonatas de Moraes Junior) && gaqno",
+  "license": "MIT",
+  "keywords": [
+    "webcomponent",
+    "multiselect"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Honatas/multi-select-webcomponent"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.2.4"
+  }
+}
