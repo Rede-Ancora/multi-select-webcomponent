@@ -1,31 +1,25 @@
 # Multi Select Webcomponent
 
-[![GitHub](https://img.shields.io/github/license/honatas/multi-select-webcomponent?style=plastic)](https://github.com/Honatas/multi-select-webcomponent "View this project on GitHub")
-[![npm](https://img.shields.io/npm/v/@honatas/multi-select-webcomponent?style=plastic)](https://npmjs.org/package/@honatas/multi-select-webcomponent "View this project on npm")
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=plastic)](https://www.webcomponents.org/element/@honatas/multi-select-webcomponent)
-[![typescript](https://img.shields.io/badge/coded%20in-Typescript-blue?style=plastic)](https://www.typescriptlang.org/ "Try Typescript")
-[![coffee](https://img.shields.io/badge/buy%20me%20a-coffee-brown?style=plastic)](https://ko-fi.com/honatas "Buy me a coffee")
-
 A fully styleable multiselect with no polyfills.
 
-[Live demo ↗](https://jsfiddle.net/Honatas/k2fsy4Lc/29)
+[Live demo ↗](https://jsfiddle.net/gaqno/k3uwdpj0/5/)
 
 ## Install
 
 You can get it from npm:
 
-    npm install @honatas/multi-select-webcomponent
+    npm install @rede-ancora/multi-select-webcomponent
 
 Or you can get it from a CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@honatas/multi-select-webcomponent/dist/multi-select-webcomponent.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@rede-ancora/multi-select-webcomponent/dist/multi-select-webcomponent.min.js" crossorigin="anonymous"></script>
 ```
 
 If you use [Typescript](https://www.typescriptlang.org), add the definitions file to the includes section of your tsconfig.json:
 ```javascript
 "include": [
-  "node_modules/@honatas/multi-select-webcomponent/dist/multi-select-webcomponent.d.ts",
+  "node_modules/@rede-ancora/multi-select-webcomponent/dist/multi-select-webcomponent.d.ts",
   ...
 ],
 ```
@@ -66,7 +60,7 @@ Tag attribute             |CSS class                     | Target               
 **selectallbutton**       |**.msw-selectallbutton**      | "Select All" button                    |
 **selectallbuttonspan**   |**.msw-selectallbuttonspan**  | "Select All" button's inner span       |
   
-So, if you want to add classes to every item that shows when you click the component, you can either add the attribute **dropdownitem** to your tag and populate it with css classes of your own or from whichever lib you are using, or create the **.msw-dropdownitem** class on your own css file. You can see a neatly styled example using [Bootstrap 5](https://getbootstrap.com) on the [Live demo](https://jsfiddle.net/Honatas/k2fsy4Lc/29).
+So, if you want to add classes to every item that shows when you click the component, you can either add the attribute **dropdownitem** to your tag and populate it with css classes of your own or from whichever lib you are using, or create the **.msw-dropdownitem** class on your own css file. You can see a neatly styled example using [Bootstrap 5](https://getbootstrap.com) on the [Live demo](https://jsfiddle.net/gaqno/k3uwdpj0/13/).
 
 Also, if you need to change the default titles for the buttons, you can add the following tag attributes:
 
