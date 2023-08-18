@@ -232,6 +232,8 @@
         }
         onItemClick (e) {
             this.chooseOption(this.findOptionByValue(e.currentTarget.dataset.value));
+            this.dropdown.style.display = 'none';
+            this.searchbox.focus();
         }
         onSelectedClick (e) {
             const option = this.findOptionByValue(e.currentTarget.dataset.value);
