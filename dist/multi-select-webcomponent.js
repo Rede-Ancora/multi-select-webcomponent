@@ -61,8 +61,6 @@
             this.build();
         }
         set value (value) {
-            console.log(value);
-            console.log(this.options);
             for (const option of this.options) {
                 option.selected = false;
             }
@@ -204,7 +202,6 @@
             return button;
         }
         unbuildSelectAllButton () {
-            console.log('unbuildSelectAllButton')
             const selectAllButton = this.shadowRoot?.querySelector('.msw-selectallbutton');
             if (selectAllButton) {
                 selectAllButton.removeEventListener('click', this.onSelectAllClick);
